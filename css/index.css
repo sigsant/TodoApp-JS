@@ -1,40 +1,48 @@
-
+*{
+    padding: 0;
+    margin: 0;
+}
+    
 body{
     font-family: 'Roboto', sans-serif;
-/*
-    font-weight: bold;
-*/
 }
 
-h1{
+header{
+    background-color: #93B5EB;
     font-family: 'Courgette', cursive, 'verdana';
-    margin: 2rem 0;
+    padding: 2em 0em;
     text-align: center;
 }
 
 #introducir{
-    margin-top: 3em;
+    color: red;
     display: flex;
     justify-content: center;
+    padding-top: 3em;
     width: 100%;
-    color: red;
+
+}
+
+#insertarTexto{
+    padding-left:0.4em;
 }
 
 .letra_pequeña{
     box-sizing:border-box;
     color:red;
+    display: flex;
+    justify-content:center;
     font-size: 0.8em;
-    text-align:center;
-    margin-top: 1em;
+    padding-top: 2em;
 }
 
 #mostrarTareas{
     border: 0.1em solid #1B3280;
-    margin: 1.5em 3em;
+    margin: 1.5em 2em;
 }
 
 #mostrarTareas p{
-    margin: 1.5em 2em;
+    margin: 1.5em 1em;
 }
 
 input{
