@@ -6,6 +6,7 @@ function ponerTarea(id, id2){
         var parrafo = document.createElement("p");
         parrafo.innerHTML = tarea;
         mostrarTarea.appendChild(parrafo);
+        clearInput('insertarTexto');
     }else{        
         return false;
     }
