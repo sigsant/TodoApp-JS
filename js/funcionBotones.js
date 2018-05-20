@@ -23,13 +23,3 @@ function submitEnter(e){
 function clearInput(id){
     document.getElementById(id).value="";
 }
-
-
-
-//Funciona pero no elimina el elemento seleccionado
-
-//~ function eliminar(){
-    //~ let mostrarTarea = document.getElementsByClassName('mostrarTareas')[0];
-    //~ let parrafo = document.getElementsByTagName('p')[0];
-    //~ mostrarTarea.removeChild(parrafo);
-//~ }
