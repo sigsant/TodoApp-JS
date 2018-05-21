@@ -5,6 +5,7 @@ function ponerTarea(id, id2){
     if(tarea.length > 3){ 
         var parrafo = document.createElement("p");
         parrafo.innerHTML = tarea;
+        parrafo.style.letterSpacing = "1px";
         mostrarTarea.appendChild(parrafo);
         clearInput('insertarTexto');
     }else{        
@@ -23,13 +24,3 @@ function submitEnter(e){
 function clearInput(id){
     document.getElementById(id).value="";
 }
-
-
-
-//Funciona pero no elimina el elemento seleccionado
-
-//~ function eliminar(){
-    //~ let mostrarTarea = document.getElementsByClassName('mostrarTareas')[0];
-    //~ let parrafo = document.getElementsByTagName('p')[0];
-    //~ mostrarTarea.removeChild(parrafo);
-//~ }
