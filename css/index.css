@@ -40,11 +40,10 @@ header{
 
 #mostrarTareas{
     border: 0.1em solid #1B3280;
-    margin: 1.5em 2em;
-}
-
-#mostrarTareas p{
-    font-size: 0.9em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 1em;
     margin: 1.5em 1em;
 }
 
