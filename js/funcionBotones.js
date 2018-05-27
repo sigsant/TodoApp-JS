@@ -14,13 +14,14 @@ function ponerTarea(id, id2){
         item.onclick = eliminar;
         //Al pulsar enter se vacia el contenido
         clearInput('insertarTexto');
-    }else{        
+    }else{       
+        alert("Escribe al menos 4 carácteres"); 
         return false;
     }
 }
 
 //Elimina el objeto al hacer click
-function eliminar(id){
+function eliminar(){
     document.getElementById("mostrarTareas").removeChild(this);
 }
 
@@ -28,6 +29,9 @@ function eliminar(id){
 function submitEnter(e){
     if(e.keyCode == 13){
         ponerTarea('insertarTexto','mostrarTareas');
+        clearInput('insertarTexto');
+    }
+    else if(e.keyCode == 27){ //Con Esc vacia el input
         clearInput('insertarTexto');
     }
 }
