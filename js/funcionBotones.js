@@ -9,7 +9,7 @@ function ponerTarea(id, id2){
         item.style.marginTop="15px";
         item.style.marginBottom = "5px";
         mostrarTarea.appendChild(item);
-        
+        guardarLista();
         //eliminamos este elemento al hacer click
         item.onclick = eliminar;
         //Al pulsar enter se vacia el contenido
@@ -23,6 +23,7 @@ function ponerTarea(id, id2){
 //Elimina el objeto al hacer click
 function eliminar(){
     document.getElementById("mostrarTareas").removeChild(this);
+    guardarLista();
 }
 
 //Permite introducir datos con Enter y vacia el input
@@ -38,4 +39,12 @@ function submitEnter(e){
 
 function clearInput(id){
     document.getElementById(id).value="";
+}
+
+function guardarLista(){
+    localStorage.todoApp = document.getElementById("mostrarTareas").textContent;
+}
+
+function cargarLista(){
+    document.getElementById("mostrarTareas").textContent = localStorage.todoApp;
 }

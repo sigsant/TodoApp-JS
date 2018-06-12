@@ -45,6 +45,7 @@ header{
     justify-content: flex-start;
     padding-left: 1em;
     margin: 1.5em 1em;
+    cursor: pointer;
 }
 
 input{
@@ -55,4 +56,14 @@ input{
 
 img{
     margin-left: 2em;
+}
+
+#guardarCargar{
+    width: 20%;
+    margin: auto;
+}
+
+#save, #load{
+    margin: 0em 2em;
+    padding: .4em;
 }
